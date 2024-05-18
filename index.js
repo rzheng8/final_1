@@ -4,6 +4,7 @@ const app = express()
 require('dotenv').config()
 
 app.use(express.json())
+app.use(cors());
 
 const sensorData1 = require('./routes/sensorData1');
 const sensorData2 = require('./routes/sensorData2');
